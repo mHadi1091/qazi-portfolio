@@ -1,51 +1,75 @@
 import { 
   Globe, Zap, Terminal, Container, Lock, Database, 
   Cloud, Server, Award, Settings, Shield,
-  Code, FileCode, Network, Layers
+  Code, FileCode, Network, Layers, Trophy, Star
 } from 'lucide-react';
 
 export const projects = [
   {
-    title: 'Multi-Region Cloud Infrastructure',
-    description: 'Designed and deployed highly available architecture across 3 AWS regions serving 10M+ users with 99.99% uptime',
-    tech: ['EC2', 'Route 53', 'CloudFront', 'RDS', 'S3'],
+    title: 'Multi-Cloud Infrastructure',
+    description: 'Designed and deployed infrastructure across AWS, Azure, GCP, and Alibaba Cloud with 99.9% uptime',
+    tech: ['AWS', 'Azure', 'GCP', 'Terraform', 'Kubernetes'],
     icon: Globe,
     color: 'blue'
   },
   {
-    title: 'Serverless Microservices Platform',
-    description: 'Built fully serverless architecture reducing operational costs by 60% while improving scalability',
-    tech: ['Lambda', 'API Gateway', 'DynamoDB', 'EventBridge'],
-    icon: Zap,
-    color: 'yellow'
-  },
-  {
     title: 'CI/CD Pipeline Automation',
-    description: 'Implemented automated deployment pipelines achieving 95% success rate and 10x faster deployments',
-    tech: ['CodePipeline', 'CodeBuild', 'CloudFormation', 'Terraform'],
+    description: 'Implemented automated deployment pipelines using GitHub Actions, Azure DevOps, and GitLab CI',
+    tech: ['GitHub Actions', 'Azure DevOps', 'GitLab', 'Jenkins'],
     icon: Terminal,
     color: 'purple'
   },
   {
-    title: 'Kubernetes on AWS EKS',
-    description: 'Orchestrated containerized applications with auto-scaling, monitoring, and zero-downtime deployments',
-    tech: ['EKS', 'Docker', 'Helm', 'Prometheus', 'Grafana'],
+    title: 'Container Orchestration',
+    description: 'Orchestrated containerized applications with Docker and Kubernetes across multiple cloud providers',
+    tech: ['Docker', 'Kubernetes', 'Helm', 'RUNPOD'],
     icon: Container,
     color: 'indigo'
   },
   {
-    title: 'Cloud Security & Compliance',
-    description: 'Established security framework achieving SOC 2 compliance with automated security scanning',
-    tech: ['IAM', 'GuardDuty', 'Security Hub', 'KMS', 'CloudTrail'],
-    icon: Lock,
+    title: 'Infrastructure as Code',
+    description: 'Automated infrastructure provisioning using Terraform and AWS CDK with version control',
+    tech: ['Terraform', 'AWS CDK', 'Python', 'Shell'],
+    icon: FileCode,
     color: 'green'
   },
   {
-    title: 'Big Data Analytics Platform',
-    description: 'Architected scalable data lake processing 1TB+ daily with real-time analytics capabilities',
-    tech: ['S3', 'Glue', 'Athena', 'Redshift', 'EMR'],
-    icon: Database,
+    title: 'Monitoring & Observability',
+    description: 'Implemented comprehensive monitoring stack using LGTM (Loki, Grafana, Tempo, Mimir)',
+    tech: ['Grafana', 'Loki', 'Tempo', 'Mimir', 'Prometheus'],
+    icon: Network,
+    color: 'yellow'
+  },
+  {
+    title: 'Configuration Management',
+    description: 'Automated server configuration and application deployment using Ansible playbooks',
+    tech: ['Ansible', 'Python', 'YAML', 'Bash'],
+    icon: Settings,
     color: 'violet'
+  }
+];
+
+export const awards = [
+  {
+    title: 'Top Performer of the Quarter',
+    company: 'IET, San Francisco',
+    location: 'Lahore',
+    icon: Trophy,
+    color: 'gold'
+  },
+  {
+    title: 'Best Performer of the Month',
+    company: 'Genclouds',
+    location: '',
+    icon: Star,
+    color: 'blue'
+  },
+  {
+    title: 'Official Exam Excellence',
+    company: '97% Results',
+    location: '',
+    icon: Award,
+    color: 'green'
   }
 ];
 
@@ -65,15 +89,15 @@ export const certifications = [
     color: 'blue'
   },
   { 
-    name: 'AWS Security', 
-    level: 'Specialty', 
+    name: 'Azure DevOps Engineer', 
+    level: 'Expert', 
     year: '2023',
     icon: Shield,
     color: 'purple'
   },
   { 
-    name: 'AWS SysOps Administrator', 
-    level: 'Associate', 
+    name: 'GCP Professional', 
+    level: 'Cloud Architect', 
     year: '2023',
     icon: Server,
     color: 'green'
@@ -82,15 +106,20 @@ export const certifications = [
 
 export const skills = [
   { name: 'AWS', icon: Cloud },
-  { name: 'EC2', icon: Server },
-  { name: 'Lambda', icon: Zap },
-  { name: 'S3', icon: Database },
+  { name: 'Azure', icon: Cloud },
+  { name: 'GCP', icon: Cloud },
+  { name: 'RUNPOD', icon: Server },
+  { name: 'Alibaba', icon: Cloud },
   { name: 'Docker', icon: Container },
   { name: 'Kubernetes', icon: Layers },
   { name: 'Terraform', icon: FileCode },
+  { name: 'CDK', icon: Code },
   { name: 'Python', icon: Code },
-  { name: 'CI/CD', icon: Terminal },
-  { name: 'Monitoring', icon: Network },
-  { name: 'Security', icon: Shield },
-  { name: 'DevOps', icon: Settings }
+  { name: 'Shell/Bash', icon: Terminal },
+  { name: 'GitHub Actions', icon: Settings },
+  { name: 'Azure DevOps', icon: Settings },
+  { name: 'GitLab', icon: Settings },
+  { name: 'Jenkins', icon: Terminal },
+  { name: 'Ansible', icon: Settings },
+  { name: 'LGTM Stack', icon: Network }
 ];

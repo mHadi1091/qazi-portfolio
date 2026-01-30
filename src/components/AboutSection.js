@@ -9,11 +9,11 @@ const AboutSection = () => {
         <div className="text-center mb-16 space-y-4">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-card border border-cyan-500/30">
             <Cpu className="w-4 h-4 text-cyan-400" />
-            <span className="text-sm text-cyan-300 font-medium">About Me</span>
+            <span className="text-sm text-cyan-300 font-medium">Technical Skills</span>
           </div>
           <h2 className="text-4xl md:text-5xl font-bold">
             <span className="bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text text-transparent">
-              Cloud Infrastructure Expert
+              Multi-Cloud DevOps Expertise
             </span>
           </h2>
         </div>
@@ -30,9 +30,9 @@ const AboutSection = () => {
             
             <div className="space-y-6">
               {[
-                { period: '2022 - Present', title: 'Senior Cloud Architect', desc: 'Leading enterprise cloud migration strategies', color: 'cyan' },
-                { period: '2020 - 2022', title: 'DevOps Engineer', desc: 'Implemented automated CI/CD pipelines', color: 'blue' },
-                { period: '2018 - 2020', title: 'Cloud Engineer', desc: 'Built and maintained AWS infrastructure', color: 'purple' }
+                { period: '2022 - Present', title: 'Senior DevOps Engineer', desc: 'Leading multi-cloud infrastructure automation', color: 'cyan' },
+                { period: '2021 - 2022', title: 'DevOps Engineer', desc: 'Implemented CI/CD pipelines and container orchestration', color: 'blue' },
+                { period: '2020 - 2021', title: 'Cloud Engineer', desc: 'Built and maintained cloud infrastructure', color: 'purple' }
               ].map((exp, i) => (
                 <div key={i} className="relative pl-6 border-l-2 border-white/10 hover:border-cyan-500/50 transition-colors group">
                   <div className={`absolute left-0 top-2 w-2 h-2 -translate-x-[5px] bg-${exp.color}-500 rounded-full group-hover:scale-150 transition-transform`} />
@@ -52,10 +52,10 @@ const AboutSection = () => {
               <div className="p-3 rounded-xl bg-gradient-to-br from-purple-500 to-pink-600 shadow-lg shadow-purple-500/30">
                 <Settings className="w-6 h-6" />
               </div>
-              <h3 className="text-2xl font-bold">Technical Skills</h3>
+              <h3 className="text-2xl font-bold">Technical Stack</h3>
             </div>
             
-            <div className="grid grid-cols-3 gap-3">
+            <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
               {skills.map((skill, i) => (
                 <div 
                   key={skill.name}

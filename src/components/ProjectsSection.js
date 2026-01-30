@@ -16,10 +16,10 @@ const ProjectsSection = () => {
     <section id="projects" className="relative py-24 px-6">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16 space-y-4">
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-card border border-purple-500/30">
+          {/* <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-card border border-purple-500/30">
             <Layers className="w-4 h-4 text-purple-400" />
             <span className="text-sm text-purple-300 font-medium">Portfolio</span>
-          </div>
+          </div> */}
           <h2 className="text-4xl md:text-5xl font-bold">
             <span className="bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
               Cloud Infrastructure Projects

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Sparkles, ChevronRight, Download, Cloud, Server, Zap, Container, Database } from 'lucide-react';
+import { Sparkles, ChevronRight, Download, Cloud, Server, Container, FileCode, Terminal } from 'lucide-react';
 
 const HeroSection = () => {
   return (
@@ -11,7 +11,7 @@ const HeroSection = () => {
             {/* Badge */}
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-card border border-cyan-500/30 hover:border-cyan-500/50 transition-all">
               <Sparkles className="w-4 h-4 text-cyan-400" />
-              <span className="text-sm text-cyan-300 font-medium">AWS Certified Professional</span>
+              <span className="text-sm text-cyan-300 font-medium">Multi-Cloud Certified Professional</span>
             </div>
 
             {/* Heading */}
@@ -20,31 +20,31 @@ const HeroSection = () => {
                 Hi, I'm{' '}
                 <span className="relative inline-block">
                   <span className="relative z-10 bg-gradient-to-r from-cyan-400 via-blue-400 to-cyan-400 bg-clip-text text-transparent bg-[length:200%_auto] animate-gradient">
-                    Qazi
+                    Qazi Faisal
                   </span>
                   <div className="absolute inset-0 blur-2xl bg-gradient-to-r from-cyan-400/30 to-blue-400/30" />
                 </span>
               </h1>
               
               <h2 className="text-2xl md:text-3xl lg:text-4xl text-gray-300 font-light">
-                Cloud Solutions Architect
+                DevOps/SRE Engineer
               </h2>
             </div>
 
             {/* Description */}
             <p className="text-lg text-gray-400 leading-relaxed max-w-2xl">
-              Designing scalable, secure, and cost-effective cloud infrastructures on AWS. 
-              Specialized in serverless architectures, container orchestration, and DevOps automation.
+              Specialized in multi-cloud infrastructure automation, container orchestration, and CI/CD pipelines. 
+              Expert in AWS, Azure, GCP, and modern DevOps practices with 3+ years of experience.
             </p>
 
-            {/* AWS Service Badges */}
+            {/* Cloud Service Badges */}
             <div className="flex flex-wrap gap-3 pt-2">
               {[
-                { icon: Cloud, text: 'AWS', color: 'cyan' },
-                { icon: Server, text: 'EC2', color: 'blue' },
-                { icon: Zap, text: 'Lambda', color: 'yellow' },
-                { icon: Container, text: 'EKS', color: 'purple' },
-                { icon: Database, text: 'RDS', color: 'green' }
+                { icon: Cloud, text: 'AWS', color: 'orange' },
+                { icon: Cloud, text: 'Azure', color: 'blue' },
+                { icon: Cloud, text: 'GCP', color: 'green' },
+                { icon: Container, text: 'Docker', color: 'cyan' },
+                { icon: FileCode, text: 'Terraform', color: 'purple' }
               ].map((service, i) => (
                 <div 
                   key={service.text}
@@ -118,7 +118,7 @@ const HeroSection = () => {
                   <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent pointer-events-none" />
                 </div>
 
-                {/* Floating AWS Badge */}
+                 {/* Floating AWS Badge */}
                 <div className="absolute -top-4 -right-4 z-10">
                   <div className="relative group">
                     <div className="absolute inset-0 bg-gradient-to-br from-orange-500 to-yellow-500 rounded-xl blur-lg opacity-75 group-hover:opacity-100 transition-opacity" />
@@ -128,6 +128,7 @@ const HeroSection = () => {
                     </div>
                   </div>
                 </div>
+
 
                 {/* Status Badge */}
                 <div className="absolute -bottom-3 left-1/2 -translate-x-1/2 z-10">

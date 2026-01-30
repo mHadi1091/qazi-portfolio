@@ -1,5 +1,5 @@
 import React from 'react';
-import { Github, Linkedin, Menu, X, CloudCog } from 'lucide-react';
+import {  Menu, X, CloudCog } from 'lucide-react';
 
 const Navigation = ({ activeSection, isMenuOpen, setIsMenuOpen }) => {
   return (
@@ -16,7 +16,7 @@ const Navigation = ({ activeSection, isMenuOpen, setIsMenuOpen }) => {
                 </div>
               </div>
               <span className="text-lg font-bold bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text text-transparent">
-                Qazi
+                Qazi <span className="text-white"> Faisal</span>
               </span>
             </div>
 

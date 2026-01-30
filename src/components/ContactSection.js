@@ -6,10 +6,10 @@ const ContactSection = () => {
     <section id="contact" className="relative py-24 px-6">
       <div className="max-w-4xl mx-auto">
         <div className="text-center mb-16 space-y-4">
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-card border border-green-500/30">
-            <Mail className="w-4 h-4 text-green-400" />
-            <span className="text-sm text-green-300 font-medium">Get In Touch</span>
-          </div>
+            {/* <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-card border border-green-500/30">
+              <Mail className="w-4 h-4 text-green-400" />
+              <span className="text-sm text-green-300 font-medium">Get In Touch</span>
+            </div> */}
           <h2 className="text-4xl md:text-5xl font-bold">
             <span className="bg-gradient-to-r from-green-400 to-teal-400 bg-clip-text text-transparent">
               Let's Build Together
@@ -71,8 +71,8 @@ const ContactSection = () => {
           <div className="mt-12 pt-8 border-t border-white/10 flex items-center justify-center gap-6">
             {[
               { icon: Mail, href: 'mailto:qazi@example.com', label: 'Email' },
-              { icon: Linkedin, href: 'https://linkedin.com', label: 'LinkedIn' },
-              { icon: Github, href: 'https://github.com', label: 'GitHub' }
+              { icon: Linkedin, href: 'https://www.linkedin.com/in/faisal-israr-qazi-666a46207/', label: 'LinkedIn' },
+              { icon: Github, href: 'https://github.com/fqazi-gencloud', label: 'GitHub' }
             ].map((social, i) => {
               const Icon = social.icon;
               return (

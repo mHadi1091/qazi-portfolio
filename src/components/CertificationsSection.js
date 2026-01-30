@@ -20,7 +20,7 @@ const CertificationsSection = () => {
           </div>
           <h2 className="text-4xl md:text-5xl font-bold">
             <span className="bg-gradient-to-r from-orange-400 to-yellow-400 bg-clip-text text-transparent">
-              AWS Certified Professional
+              Multi-Cloud Certified Professional
             </span>
           </h2>
         </div>
@@ -32,22 +32,25 @@ const CertificationsSection = () => {
             return (
               <div 
                 key={i}
-                className="glass-card-strong rounded-2xl p-6 border border-white/10 hover:border-cyan-500/40 transition-all text-center group cursor-pointer hover:scale-105 min-h-[280px] flex flex-col justify-between"
+                className="glass-card-strong rounded-2xl p-6 border border-white/10 hover:border-cyan-500/40 transition-all text-center group cursor-pointer hover:scale-105 min-h-[300px] flex flex-col justify-between"
               >
-                <div className="flex flex-col items-center">
+                <div className="flex flex-col items-center flex-grow">
                   <div className={`inline-flex p-4 rounded-xl bg-gradient-to-br ${colorMap[cert.color]} mb-4 shadow-lg group-hover:scale-110 transition-transform`}>
                     <Icon className="w-8 h-8" />
                   </div>
                   
-                  <div className="inline-block px-3 py-1 rounded-full glass-card text-xs font-medium mb-3 border border-white/10">
+                  <div className="inline-block px-3 py-1 rounded-full glass-card text-xs font-medium mb-4 border border-white/10">
                     {cert.level}
                   </div>
                   
-                  <h3 className="font-bold text-lg mb-2 leading-tight min-h-[3.5rem] flex items-center">{cert.name}</h3>
+                  <div className="flex-grow flex items-center justify-center">
+                    <h3 className="font-bold text-lg leading-tight text-center">{cert.name}</h3>
+                  </div>
+                  
                   <p className="text-sm text-gray-400 mb-4">Certified {cert.year}</p>
                 </div>
                 
-                <div className="pt-4 border-t border-white/10 mt-auto">
+                <div className="pt-4 border-t border-white/10">
                   <CheckCircle2 className="w-5 h-5 text-green-400 mx-auto" />
                 </div>
               </div>
