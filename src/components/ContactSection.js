@@ -70,7 +70,7 @@ const ContactSection = () => {
 
           <div className="mt-12 pt-8 border-t border-white/10 flex items-center justify-center gap-6">
             {[
-              { icon: Mail, href: 'mailto:qazi@example.com', label: 'Email' },
+              { icon: Mail, href: 'mailto:qazifaisal.dev@gmail.com', label: 'Email' },
               { icon: Linkedin, href: 'https://www.linkedin.com/in/faisal-israr-qazi-666a46207/', label: 'LinkedIn' },
               { icon: Github, href: 'https://github.com/fqazi-gencloud', label: 'GitHub' }
             ].map((social, i) => {

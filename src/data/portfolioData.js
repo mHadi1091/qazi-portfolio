@@ -1,10 +1,17 @@
 import { 
   Globe, Zap, Terminal, Container, Lock, Database, 
   Cloud, Server, Award, Settings, Shield,
-  Code, FileCode, Network, Layers, Trophy, Star
+  Code, FileCode, Network, Layers, Trophy, Star, Brain
 } from 'lucide-react';
 
 export const projects = [
+  {
+    title: 'AI-Powered Enterprise Monitoring Platform',
+    description: 'Working with international client to contribute to their product handling 1M+ users & managing the whole LGTM stack with AI-driven insights',
+    tech: ['LGTM Stack', 'Grafana', 'Loki', 'Tempo', 'Mimir', 'AI/ML'],
+    icon: Brain,
+    color: 'purple'
+  },
   {
     title: 'Multi-Cloud Infrastructure',
     description: 'Designed and deployed infrastructure across AWS, Azure, GCP, and Alibaba Cloud with 99.9% uptime',
@@ -32,13 +39,6 @@ export const projects = [
     tech: ['Terraform', 'AWS CDK', 'Python', 'Shell'],
     icon: FileCode,
     color: 'green'
-  },
-  {
-    title: 'Monitoring & Observability',
-    description: 'Implemented comprehensive monitoring stack using LGTM (Loki, Grafana, Tempo, Mimir)',
-    tech: ['Grafana', 'Loki', 'Tempo', 'Mimir', 'Prometheus'],
-    icon: Network,
-    color: 'yellow'
   },
   {
     title: 'Configuration Management',
@@ -82,25 +82,18 @@ export const certifications = [
     color: 'orange'
   },
   { 
-    name: 'AWS DevOps Engineer', 
-    level: 'Professional', 
-    year: '2024',
+    name: 'AWS Solutions Architect', 
+    level: 'Associate', 
+    year: '2023',
     icon: Settings,
     color: 'blue'
   },
   { 
-    name: 'Azure DevOps Engineer', 
-    level: 'Expert', 
+    name: 'Certified Kubernetes Administrator', 
+    level: 'CKA', 
     year: '2023',
-    icon: Shield,
+    icon: Container,
     color: 'purple'
-  },
-  { 
-    name: 'GCP Professional', 
-    level: 'Cloud Architect', 
-    year: '2023',
-    icon: Server,
-    color: 'green'
   }
 ];
 

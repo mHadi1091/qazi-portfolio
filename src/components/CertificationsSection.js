@@ -25,14 +25,14 @@ const CertificationsSection = () => {
           </h2>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 justify-items-center">
           {certifications.map((cert, i) => {
             const Icon = cert.icon;
             
             return (
               <div 
                 key={i}
-                className="glass-card-strong rounded-2xl p-6 border border-white/10 hover:border-cyan-500/40 transition-all text-center group cursor-pointer hover:scale-105 min-h-[300px] flex flex-col justify-between"
+                className="glass-card-strong rounded-2xl p-6 border border-white/10 hover:border-cyan-500/40 transition-all text-center group cursor-pointer hover:scale-105 min-h-[300px] flex flex-col justify-between w-full max-w-sm"
               >
                 <div className="flex flex-col items-center flex-grow">
                   <div className={`inline-flex p-4 rounded-xl bg-gradient-to-br ${colorMap[cert.color]} mb-4 shadow-lg group-hover:scale-110 transition-transform`}>

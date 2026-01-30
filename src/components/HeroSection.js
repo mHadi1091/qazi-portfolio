@@ -85,40 +85,18 @@ const HeroSection = () => {
               <div className="glass-card-strong rounded-2xl p-4 border border-white/20">
                 {/* Image Container */}
                 <div className="relative aspect-[4/5] rounded-xl overflow-hidden bg-gradient-to-br from-slate-800 via-slate-900 to-slate-800">
-                  {/* Image placeholder - Replace with actual image */}
-                  <div className="absolute inset-0 flex items-center justify-center bg-gradient-to-br from-slate-800 to-slate-900">
-                    <div className="text-center space-y-6 p-8">
-                      <div className="w-32 h-32 mx-auto rounded-full bg-gradient-to-br from-cyan-500 to-blue-600 flex items-center justify-center shadow-2xl shadow-cyan-500/50">
-                        <span className="text-5xl font-bold text-white">Q</span>
-                      </div>
-                      <div className="space-y-3">
-                        <p className="text-gray-400 text-sm font-medium">Replace this div with your image:</p>
-                        <div className="glass-card p-4 rounded-lg">
-                          <code className="text-xs text-cyan-400 block">
-                            {'<img'}
-                          </code>
-                          <code className="text-xs text-cyan-400 block">
-                            {'  src="/qazi.jpg"'}
-                          </code>
-                          <code className="text-xs text-cyan-400 block">
-                            {'  alt="Qazi"'}
-                          </code>
-                          <code className="text-xs text-cyan-400 block">
-                            {'  className="w-full h-full object-cover"'}
-                          </code>
-                          <code className="text-xs text-cyan-400 block">
-                            {'/>'}
-                          </code>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+                  {/* Actual Image */}
+                  <img 
+                    src="/qazi.jpg"
+                    alt="Qazi Faisal - DevOps/SRE Engineer"
+                    className="w-full h-full object-cover"
+                  />
 
                   {/* Gradient Overlay */}
                   <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent pointer-events-none" />
                 </div>
 
-                 {/* Floating AWS Badge */}
+                {/* Floating Multi-Cloud Badge */}
                 <div className="absolute -top-4 -right-4 z-10">
                   <div className="relative group">
                     <div className="absolute inset-0 bg-gradient-to-br from-orange-500 to-yellow-500 rounded-xl blur-lg opacity-75 group-hover:opacity-100 transition-opacity" />
