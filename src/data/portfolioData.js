@@ -1,6 +1,6 @@
 import { 
-  Globe, Zap, Terminal, Container, Lock, Database, 
-  Cloud, Server, Award, Settings, Shield,
+  Globe,  Terminal, Container, 
+  Cloud, Server, Award, Settings, 
   Code, FileCode, Network, Layers, Trophy, Star, Brain
 } from 'lucide-react';
 
