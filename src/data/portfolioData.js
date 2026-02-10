@@ -114,5 +114,6 @@ export const skills = [
   { name: 'GitLab', icon: Settings },
   { name: 'Jenkins', icon: Terminal },
   { name: 'Ansible', icon: Settings },
-  { name: 'LGTM Stack', icon: Network }
+  { name: 'LGTM Stack', icon: Network },
+  { name: 'Grapaha', icon: Network }
 ];

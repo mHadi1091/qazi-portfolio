@@ -1,5 +1,5 @@
 import React from 'react';
-import { Mail, Github, Linkedin, ChevronRight } from 'lucide-react';
+import { Mail, Linkedin, ChevronRight } from 'lucide-react';
 
 const ContactSection = () => {
   return (
@@ -68,11 +68,11 @@ const ContactSection = () => {
             </button>
           </form>
 
-          <div className="mt-12 pt-8 border-t border-white/10 flex items-center justify-center gap-6">
+          <div className="mt-12 pt-8 border-t border-white/10 flex items-center justify-center gap-8">
             {[
               { icon: Mail, href: 'mailto:qazifaisal.dev@gmail.com', label: 'Email' },
-              { icon: Linkedin, href: 'https://www.linkedin.com/in/faisal-israr-qazi-666a46207/', label: 'LinkedIn' },
-              { icon: Github, href: 'https://github.com/fqazi-gencloud', label: 'GitHub' }
+              { icon: Linkedin, href: 'https://www.linkedin.com/in/faisal-israr-qazi-666a46207/', label: 'LinkedIn' }
+              // { icon: Github, href: 'https://github.com/fqazi-gencloud', label: 'GitHub' }
             ].map((social, i) => {
               const Icon = social.icon;
               return (

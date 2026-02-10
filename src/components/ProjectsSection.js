@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowUpRight, Layers } from 'lucide-react';
+import { ArrowUpRight } from 'lucide-react';
 import { projects } from '../data/portfolioData';
 
 const ProjectsSection = () => {
